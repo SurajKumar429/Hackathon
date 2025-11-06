@@ -416,3 +416,145 @@ body {
   color: #666;
   line-height: 1.6;
 }
+
+/* Navbar
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.points{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.list{
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.list:hover{
+  color:#16a34a
+}
+
+.lgbtn{
+  padding: 10px 20px 10px 20px;
+} */
+
+
+/* ===== Navbar Container ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #d1fae5, #bbf7d0);
+  padding: 15px 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Logo ===== */
+.logo h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #065f46;
+  letter-spacing: 1px;
+}
+
+.logo h2 span {
+  color: #16a34a;
+}
+
+/* ===== Nav Links ===== */
+.points {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #064e3b;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.list::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #16a34a;
+  transition: width 0.3s ease-in-out;
+}
+
+.list:hover {
+  color: #16a34a;
+}
+
+.list:hover::after {
+  width: 100%;
+}
+
+/* ===== Login Button ===== */
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.lgbtn {
+  padding: 13px 30px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: medium;
+  transition: all 0.3s ease;
+}
+
+.lgbtn:hover {
+  background-color: #0e9470;
+  transform: scale(1.05);
+}
+
+/* ===== Responsive (Mobile View) =====
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .points {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .login-btn {
+    margin-top: 10px;
+  }
+} */
+
+
+
+

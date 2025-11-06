@@ -10,6 +10,7 @@ import Marketplace from './components/Marketplace';
 import MarketPrices from './components/MarketPrices';
 import Learning from './components/Learning';
 import Resources from './components/Resources';
+import Home from './components/Home';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -45,6 +46,11 @@ function App() {
       <div className="app-container">
         {user && <Header user={user} onLogout={handleLogout} />}
         <Routes>
+          <Route 
+          path="/"
+          element={user ? <Navigate to="/dashboard" /> : <Home/>}>
+            
+          </Route>
           <Route
             path="/login"
             element={user ? <Navigate to="/dashboard" /> : <Login onLogin={handleLogin} />}

@@ -1,7 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = ({ user, onLogout }) => {
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    onLogout()
+    navigate("/")
+  }
   return (
     <header className="header">
       <h1>🌾 FarmConnect</h1>
@@ -14,7 +20,7 @@ const Header = ({ user, onLogout }) => {
         <Link to="/learning">Learning</Link>
         <div className="header-user">
           <span>Welcome, {user?.name}</span>
-          <button className="btn btn-secondary" onClick={onLogout}>
+          <button className="btn btn-secondary" onClick={handleLogout}>
             Logout
           </button>
         </div>
