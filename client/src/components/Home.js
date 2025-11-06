@@ -1,16 +1,18 @@
 import React from 'react'
 import Navbar from './Navbar'
-// import Footer from './Footer'
+import Footer from './Footer'
 import Hero from './Hero'
-// import About from './About'
+import About from './About'
+import Gallery from './Gallery'
 
 const Home = () => {
   return (
-    <div>
+    <div id='home'>
         <Navbar/>
         <Hero/>
-        {/* <About/> */}
-        {/* <Footer/> */}
+        <Gallery/>
+        <About/>
+        <Footer/>
     </div>
   )
 }

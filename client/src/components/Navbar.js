@@ -13,12 +13,12 @@ const Navbar = () => {
            <h1>🌾 FarmConnect</h1>
         </div>
         
-        <ul className='points'>
-            <li className='list'>Home</li>
-            <li className='list'>Gallery</li>
-            <li className='list'>About Us</li>
-            <li className='list'>Contact Us</li>
-        </ul>
+        <div className='points'>
+            <a href="#home" className='list'>Home</a>
+            <a href="#Gallery" className='list'>Gallery</a>
+            <a href='#about' className='list'>About Us</a>
+            <a href='#footer' className='list'>Contact Us</a>
+        </div>
 
         <div className='login'>
             <button className='lgbtn' onClick={handleClickLogin}>Login</button>

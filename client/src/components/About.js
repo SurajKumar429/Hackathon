@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = ({ user }) => {
   return (
-    <div className="min-h-screen bg-green-50 flex flex-col">
+    <div id="about" className="min-h-screen bg-green-50 flex flex-col">
       {/* Navbar */}
       <nav className="flex justify-between items-center px-8 py-4 bg-green-600 text-white shadow-md">
         {/* About Preview */}

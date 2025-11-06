@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope, FaPhone, FaLeaf } from 
 
 function Footer() {
   return (
-    <footer className="farm-footer">
+    <footer id="footer" className="farm-footer">
       <div className="footer-container">
 
         {/* Logo and Tagline */}
