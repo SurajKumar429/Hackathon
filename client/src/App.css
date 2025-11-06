@@ -891,6 +891,7 @@ html, body, #root {
 
 
 
+
 .about-gallery {
   text-align: center;
   padding: 60px 20px;
@@ -939,3 +940,24 @@ html {
 
 
 
+@media (max-width: 768px){
+  .main-image{
+    height:400px;
+  }
+
+  .img1,
+  .img2 {
+    display: none;
+  }
+
+  .hero-text {
+    font-size: 25px;
+    left: 20px;
+    top: 200px;
+  }
+  .sub-text{
+    font-size: 17px;
+    top: 270px;
+    left: 20px;
+  }
+}
